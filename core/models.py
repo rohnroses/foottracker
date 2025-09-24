@@ -1,4 +1,5 @@
 from django.db import models
+from django.core.validators import MaxValueValidator, MinValueValidator
 
 class Country(models.Model):
     name = models.CharField(max_length=100, unique=True)    
@@ -34,13 +35,17 @@ class Player(models.Model):
         ('CAM', 'Attacking Midfielder'),
         ('GK', 'Goalkeeper'),
     ]
-    name = models.CharField(max_length=50)
-    surname = models.CharField(max_length=50)
-    country = models.ForeignKey(Country, on_delete=models.SET_NULL, null=True)
+    fullname = models.CharField(max_length=200)
+    country = models.ForeignKey(Country, on_delete=models.SET_NULL, null=True, blank=True)
     club = models.ForeignKey(Club, on_delete=models.SET_NULL, null=True)
     position = models.CharField(max_length=5, choices=POSITION_CHOICES) 
     league = models.ForeignKey(League, on_delete=models.SET_NULL, null=True)
+    transfer_value = models.IntegerField(null=True, blank=True, validators=[
+        MinValueValidator(0), 
+        MaxValueValidator(200_000_000)
+    ],
+    help_text="Трансферная стоимость в евро")
 
     def __str__(self):
-        return self.name
+        return self.fullname
     
