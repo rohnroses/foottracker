@@ -1,0 +1,22 @@
+[
+  {"name": "AC Milan", "country": "Italy", "league": "Serie A"},
+  {"name": "Inter Milan", "country": "Italy", "league": "Serie A"},
+  {"name": "Juventus", "country": "Italy", "league": "Serie A"},
+  {"name": "Napoli", "country": "Italy", "league": "Serie A"},
+  {"name": "AS Roma", "country": "Italy", "league": "Serie A"},
+  {"name": "Lazio", "country": "Italy", "league": "Serie A"},
+  {"name": "Atalanta", "country": "Italy", "league": "Serie A"},
+  {"name": "Fiorentina", "country": "Italy", "league": "Serie A"},
+  {"name": "Bologna", "country": "Italy", "league": "Serie A"},
+  {"name": "Torino", "country": "Italy", "league": "Serie A"},
+  {"name": "Genoa", "country": "Italy", "league": "Serie A"},
+  {"name": "Cagliari", "country": "Italy", "league": "Serie A"},
+  {"name": "Parma", "country": "Italy", "league": "Serie A"},
+  {"name": "Pisa", "country": "Italy", "league": "Serie A"},
+  {"name": "Como", "country": "Italy", "league": "Serie A"},
+  {"name": "Sassuolo", "country": "Italy", "league": "Serie A"},
+  {"name": "Udinese", "country": "Italy", "league": "Serie A"},
+  {"name": "Cremonese", "country": "Italy", "league": "Serie A"},
+  {"name": "Monza", "country": "Italy", "league": "Serie A"},
+  {"name": "Lecce", "country": "Italy", "league": "Serie A"}
+]
